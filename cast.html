@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Малек Синнер - С кого рисовали данного персонажа</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Дополнительные стили для страницы актеров */
+        .actor {
+            border-bottom: 2px solid #eaeaea;
+            padding: 20px 0;
+            margin: 20px 0;
+        }
+        
+        .actor:last-child {
+            border-bottom: none;
+        }
+        
+        .actor img {
+            border-radius: 8px;
+            margin-right: 20px;
+            float: left;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .actor-info {
+            overflow: hidden; /* Для обтекания floated изображения */
+        }
+        
+        .actor h2 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О персонаже</a></li>
+                <li><a href="cast.html">Его прототип</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>С кого рисовали данного персонажа</h1>
+        
+        <div class="actor clearfix">
+            <img src="images/rami-malek.jpg" alt="Рами Малек" width="200">
+            <div class="actor-info">
+                <h2>Рами Малек</h2>
+                <p><strong>Прототип:</strong> 1</p>
+                <p><strong>Дата рождения:</strong> 12 мая 1981 года</p>
+                <p>Американский актёр египетского происхождения. Известность ему принесла роль Эллиота Алдерсона в телесериале «Мистер Робот», за которую он получил премию «Эмми».</p>
+            </div>
+        </div>
+
+        <div class="actor clearfix">
+            <img src="images/aidan.jpg" alt="Эйдан Галлахер" width="200">
+            <div class="actor-info">
+                <h2>Эйдан Галлахер</h2>
+                <p><strong>Прототип:</strong> 2</p>
+                <p><strong>Дата рождения:</strong> 18 сентября 2003 года</p>
+                <p>Американский актёр, экологический активист и музыкант. Его первой большой работой стала роль Никки Харпера в сериале от Nickelodeon «Никки, Рикки, Дикки и Дон».</p>
+            </div>
+        </div>
+
+        <div class="actor clearfix">
+            <img src="images/killian.jpg" alt="Киллиан Мёрфи" width="200">
+            <div class="actor-info">
+                <h2>Киллиан Мёрфи</h2>
+                <p><strong>Прототип:</strong> 3</p>
+                <p><strong>Дата рождения:</strong> 25 мая 1976 года</p>
+                <p>Ирландский актёр и музыкант, работающий в театре, кино и на телевидении. Начав творческую карьеру в качестве вокалиста и музыканта в рок-группе, он отказался от контракта с лейблом звукозаписи и решил посвятить себя актёрскому мастерству.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Фанатский сайт о персонаже Малек Синнер.</p>
+    </footer>
+
+</body>
+</html>

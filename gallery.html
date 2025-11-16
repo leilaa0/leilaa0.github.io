@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Малек Синнер - Галерея</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Дополнительные стили для страницы актеров */
+        .actor {
+            border-bottom: 2px solid #eaeaea;
+            padding: 20px 0;
+            margin: 20px 0;
+        }
+        
+        .actor:last-child {
+            border-bottom: none;
+        }
+        
+        .actor img {
+            border-radius: 8px;
+            margin-right: 20px;
+            float: left;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .actor-info {
+            overflow: hidden; /* Для обтекания floated изображения */
+        }
+        
+        .actor h2 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О персонаже</a></li>
+                <li><a href="cast.html">Его прототип</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Галерея</h1>
+        
+        <div class="actor clearfix">
+            <img src="images/malmelkiq.jpg" alt="Маленький Малек" width="200">
+            <div class="actor-info">
+                <h2>Маленький Малек</h2>
+            </div>
+        </div>
+
+        <div class="actor clearfix">
+            <img src="images/poster1.jpg" alt="Изображение 1" width="200">
+            <div class="actor-info">
+                <h2>Изображение 1</h2>
+            </div>
+        </div>
+	
+	<div class="actor clearfix">
+            <img src="images/poster2.jpg" alt="Изображение 2" width="200">
+            <div class="actor-info">
+                <h2>Изображение 2</h2>
+            </div>
+        </div>
+	
+	<div class="actor clearfix">
+            <img src="images/poster3.jpg" alt="Изображение 3" width="200">
+            <div class="actor-info">
+                <h2>Изображение 3</h2>
+            </div>
+        </div>
+
+        <div class="actor clearfix">
+            <img src="images/anketa.jpg" alt="Анкета" width="200">
+            <div class="actor-info">
+                <h2>Анкета</h2>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Фанатский сайт о персонаже Малек Синнер.</p>
+    </footer>
+
+</body>
+</html>
